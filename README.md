@@ -58,5 +58,5 @@ There was a VGG16 model which was giving comparatively good results which I have
 
 You can refer the video for live detection.
 
-Here I have again used haarcascade to identify faces and pass them into the model.
+This was done using OpenCv and HaarCascade to identify faces and pass them into the model.
 The model is not performing good though.

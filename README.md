@@ -4,7 +4,7 @@ Please go to the link https://drive.google.com/file/d/1i4U7lfbK02Mh9sFHDlyvgkqIc
 
 First off to run the task you may need the weights. download it from https://drive.google.com/drive/folders/1uJ1A3CwsDU2mc1s85CloT7-hU2j699OC?usp=sharing
 
-# To run or see the output go through livedetection file.
+## To run or see the output go through livedetection file.
 
 
 The Dataset is not a good one and very small due to which I was not able to train a good model
@@ -18,7 +18,7 @@ Dataset contained images like:
 And also contained photo of one cricketer in another cricketer's directory.
 
 
-## First Step: Finding Faces and Arranging into train and validation/testing set:
+## Step 1: Finding Faces and Arranging into train and validation/testing set:
 
 To see this please go through foldering.ipynb
 
@@ -37,5 +37,26 @@ Here I've cropped the faces for training, discarding the useless information as 
 
 The above was done using haarcascade in OpenCV.
 
+## Step 2: Trying different models and saving the model:
+
+First I have created ImageDataGenerator and done Image Augmentation(which means applying various filters and disturbance or flips on the image) as to help the model learn even in difficult situations and distorted or hard test cases.see the output below:
+
+![image](https://user-images.githubusercontent.com/46864533/118836929-f86d5800-b8e1-11eb-9eee-86a3fe2632ac.png)
 
 
+Then I've used various pretrained state of the art models to get good results.
+
+I have tried MobilenetV2, InceptionV3, VGG16 and ResNet.
+
+### You can find the code of this in task file and their copy where I was just playing and trying different algos.
+
+## There is no specific accuracy, you can go through the notebook and see that in most cases training accuracy is around 90% but validation accuracy is around 40% which means the model is overfitting due to small and bad data.
+
+There was a VGG16 model which was giving comparatively good results which I have saved and used further.
+
+## Step 3: Creating Live Detection module and testing.
+
+You can refer the video for live detection.
+
+Here I have again used haarcascade to identify faces and pass them into the model.
+The model is not performing good though.

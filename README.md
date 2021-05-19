@@ -18,5 +18,21 @@ Dataset contained images like:
 And also contained photo of one cricketer in another cricketer's directory.
 
 
-## First of the foldering and preprocessing:
+## First Step: Finding Faces and Arranging into train and validation/testing set:
+
+To see this please go through foldering.ipynb
+
+Here I've cropped the faces for training, discarding the useless information as to train the model better:
+
+![image](https://user-images.githubusercontent.com/46864533/118835703-dde6af00-b8e0-11eb-81e6-2a30d9b36b15.png)
+
+![image](https://user-images.githubusercontent.com/46864533/118835781-edfe8e80-b8e0-11eb-80d6-380dd06a061d.png)
+
+![image](https://user-images.githubusercontent.com/46864533/118835856-fce54100-b8e0-11eb-9c74-d17fca0a4e37.png)
+
+![image](https://user-images.githubusercontent.com/46864533/118835913-0a023000-b8e1-11eb-964d-446148e8bbea.png)
+
+The above was done using haarcascade in OpenCV.
+
+
 

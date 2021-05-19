@@ -42,7 +42,7 @@ First I have created ImageDataGenerator and done Image Augmentation(which means 
 
 Then I've used various pretrained state of the art models to get good results.
 
-I have tried MobilenetV2, InceptionV3, VGG16 and ResNet.
+I have tried MobilenetV2, InceptionV3, VGG16 and ResNet for Transfer Learning.
 
 ### You can find the code of this in task file and their copy where I was just playing and trying different algos.
 

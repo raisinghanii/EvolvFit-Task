@@ -4,8 +4,7 @@ Please go to the link https://drive.google.com/file/d/1i4U7lfbK02Mh9sFHDlyvgkqIc
 
 To run the task you may need the weights. download it from https://drive.google.com/drive/folders/1uJ1A3CwsDU2mc1s85CloT7-hU2j699OC?usp=sharing
 
-## To run or see the output go through livedetection file.
-
+## To run or see the output go through livedetection.ipynb file.
 
 The Dataset is not a good one and very small due to which I was not able to train a good model
 
@@ -16,7 +15,6 @@ Dataset contained images like:
 ![alt text](https://github.com/raisinghanii/EvolvFit-Task/blob/master/images/ravindra_jadeja/e96843617c.jpg)
 
 And also contained photo of one cricketer in another cricketer's directory.
-
 
 ## Step 1: Finding Faces and Arranging into train and validation/testing set:
 
@@ -34,7 +32,6 @@ Here I've cropped the faces for training, discarding the useless information as 
 
 ![image](https://user-images.githubusercontent.com/46864533/118836144-3d44bf00-b8e1-11eb-9dd3-978f31fce17f.png)
 
-
 The above was done using haarcascade in OpenCV.
 
 ## Step 2: Trying different models and saving the model:
@@ -42,7 +39,6 @@ The above was done using haarcascade in OpenCV.
 First I have created ImageDataGenerator and done Image Augmentation(which means applying various filters and disturbance or flips on the image) as to help the model learn even in difficult situations and distorted or hard test cases.see the output below:
 
 ![image](https://user-images.githubusercontent.com/46864533/118836929-f86d5800-b8e1-11eb-9eee-86a3fe2632ac.png)
-
 
 Then I've used various pretrained state of the art models to get good results.
 

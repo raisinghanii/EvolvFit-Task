@@ -32,6 +32,9 @@ Here I've cropped the faces for training, discarding the useless information as 
 
 ![image](https://user-images.githubusercontent.com/46864533/118835913-0a023000-b8e1-11eb-964d-446148e8bbea.png)
 
+![image](https://user-images.githubusercontent.com/46864533/118836144-3d44bf00-b8e1-11eb-9dd3-978f31fce17f.png)
+
+
 The above was done using haarcascade in OpenCV.
 
 

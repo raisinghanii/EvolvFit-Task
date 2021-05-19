@@ -5,7 +5,9 @@ First off to run the task you may need the weights. download it from https://dri
 
 # To run or see the output go through livedetection file.
 
+
 The Dataset is not a good one and very small due to which I was not able to train a good model
+
 Dataset contained images like:
 ![alt text](https://github.com/raisinghanii/EvolvFit-Task/blob/master/images/bhuvneshwar_kumar/c965e47869.jpg)
 ![alt text](https://github.com/raisinghanii/EvolvFit-Task/blob/master/images/jasprit_bumrah/2751420e7e.jpg)
@@ -17,4 +19,3 @@ And also contained photo of one cricketer in another cricketer's directory.
 
 ## First of the foldering and preprocessing:
 
-T

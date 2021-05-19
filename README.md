@@ -46,9 +46,9 @@ I have tried MobilenetV2, InceptionV3, VGG16 and ResNet.
 
 ### You can find the code of this in task file and their copy where I was just playing and trying different algos.
 
-## There is no specific accuracy, you can go through the notebook and see that in most cases training accuracy is around 90% but validation accuracy is around 40% which means the model is overfitting due to small and bad data.
+### There is no specific accuracy, you can go through the notebook and see that in most cases training accuracy is around 90% but validation accuracy is around 40% which means the model is overfitting due to small and bad data.
 
-There was a VGG16 model which was giving comparatively good results which I have saved and used further.
+### There was a VGG16 model which was giving comparatively good results which I have saved and used further.
 
 ## Step 3: Creating Live Detection module and testing.
 

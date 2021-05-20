@@ -1,10 +1,11 @@
 # EvolvFit-Task
 
-Please go to the link https://drive.google.com/file/d/1i4U7lfbK02Mh9sFHDlyvgkqIcrLl8vUd/view?usp=sharing for demo video.
+Please go to the link https://drive.google.com/file/d/1Z-jrI_5XZA2dElPKRyVtq2iQ4ti6TIO6/view?usp=sharing for demo video.
 
-To run the task you may need the weights. download it from https://drive.google.com/drive/folders/1uJ1A3CwsDU2mc1s85CloT7-hU2j699OC?usp=sharing
+To run the task you may need the weights. download tensorflow weights from https://drive.google.com/drive/folders/1uJ1A3CwsDU2mc1s85CloT7-hU2j699OC?usp=sharing.
+download pytorch weights from https://drive.google.com/file/d/1ZRpwv4ec2ajWT_IesmNt0GaRydNQgBSW/view?usp=sharing
 
-## To run or see the output go through livedetection.ipynb file.
+## To run or see the output go through livedetection.ipynb or livedetection_fastai.ipynb file.
 
 The Dataset is not a good one and very small due to which I was not able to train a good model
 
@@ -36,6 +37,8 @@ The above was done using haarcascade in OpenCV.
 
 ## Step 2: Trying different models and saving the model:
 
+I have used fastai as well as keras to try this task.
+
 First I have created ImageDataGenerator and done Image Augmentation(which means applying various filters and disturbance or flips on the image) as to help the model learn even in difficult situations and distorted or hard test cases.see the output below:
 
 ![image](https://user-images.githubusercontent.com/46864533/118836929-f86d5800-b8e1-11eb-9eee-86a3fe2632ac.png)
@@ -46,9 +49,13 @@ I have tried MobilenetV2, InceptionV3, VGG16 and ResNet for Transfer Learning.
 
 ### You can find the code of this in task file and their copy where I was just playing and trying different algos.
 
-### There is no specific accuracy, you can go through the notebook and see that in most cases training accuracy is around 90% but validation accuracy is around 40% which means the model is overfitting due to small and bad data.
+### For fastai code see fastai.ipynb where I've used Resent32.
 
-### There was a VGG16 model which was giving comparatively good results which I have saved and used further.
+### There is no specific accuracy, you can go through the notebook and see that in tensorflow models in most cases training accuracy is around 90% but validation accuracy is around 40% which means the model is overfitting due to small and bad data. Whereas in fastai model there was 70% accuracy on test set.
+
+### If you want a number then Accuracy : 70%.
+
+### VGG16 was giving good results in Keras whereas Resent34 was used in fastai.
 
 ## Step 3: Creating Live Detection module and testing.
 
@@ -56,3 +63,5 @@ You can refer the video for live detection.
 
 This was done using OpenCv and HaarCascade to identify faces and pass them into the model.
 The model is not performing good though.
+
+To see the tensorflow demo video go through : https://drive.google.com/file/d/1i4U7lfbK02Mh9sFHDlyvgkqIcrLl8vUd/view?usp=sharing

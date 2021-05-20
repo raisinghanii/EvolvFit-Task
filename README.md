@@ -51,9 +51,8 @@ I have tried MobilenetV2, InceptionV3, VGG16 and ResNet for Transfer Learning.
 
 ### For fastai code see fastai.ipynb where I've used Resent32.
 
-### There is no specific accuracy, you can go through the notebook and see that in tensorflow models in most cases training accuracy is around 90% but validation accuracy is around 40% which means the model is overfitting due to small and bad data. Whereas in fastai model there was 70% accuracy on test set.
+### There is no specific accuracy, you can go through the notebook and see that in tensorflow models in most cases training accuracy is around 90% but validation accuracy is around 40% which means the model is overfitting due to small and bad data. Whereas in fastai model there was _70% accuracy_ on test set.
 
-### If you want a number then Accuracy : 70%.
 
 ### VGG16 was giving good results in Keras whereas Resent34 was used in fastai.
 
